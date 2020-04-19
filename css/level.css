@@ -1,0 +1,100 @@
+
+article { text-align: center; }
+/*
+** MESSAGE EDITED IN GENERAL.CSS
+*/
+
+/*
+** CONTROL DE JUEGO
+*/
+
+#blocklyDiv {
+	display: inline-block;
+	margin: 0 0 1em 0;
+	height: 40em;
+	width: 65%;
+	border-top: solid .2em rgba(23,131,198, 1); }
+
+	#blocklyDiv svg, #blocklyDivcaja { 
+		display: inline-block; }
+
+
+	.blocklyFlyoutBackground, .blocklyScrollbarKnob {
+		fill: rgba(23,131,198, 0.8) !important;
+		rx: 0;
+		ry: 0;
+	}
+
+/*
+** ESTADO DE TABLERO
+*/
+
+
+#status {
+	width: 34%;
+	max-width: 33em;
+	height: 40em;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(255, 255, 255, 0.5); }
+
+	#status h2 { 
+		color: #596267;
+		margin: 0 0 0.5em;
+		padding: 0.5em;
+		background-color: #ECB71E;
+		text-align: center; 
+		text-transform: uppercase;
+		font-size: 1.7em; } 
+
+/* 	#status div:nth-child(2) {  Contiene el tablero 
+		border-radius: .3em;
+		background-color: rgba(23,131,198, 1);
+		margin: auto ;
+		padding: 1em; } */
+
+	#status #lab { position: relative; }
+
+	#status #emoji {
+		position: absolute;
+		text-align: left;
+		top: 0;
+		bottom: 0;
+		border-radius: .3em;
+		border: solid 1em #ECB71E;
+		margin: auto;
+		left: 5%;
+		right: 5%;
+	}
+
+	#status .board { /* Contiene el tablero */
+		border-radius: .3em;
+		border: solid 1em #ECB71E;
+		margin: auto;
+		width: 90%; }
+
+	#status div:last-child {
+	   width: 100%;
+	   text-align: center;
+	   padding: 1em 0; }
+
+	   #status div:last-child img {
+			vertical-align: top;
+			width: 20%;
+			cursor: pointer;
+			margin-right: 1em; }
+
+	      #status div:last-child img:hover { opacity: 0.7; }
+
+	#controles i {
+		color: #CD3E27;
+		background-color: #ECB71E;
+		border: solid #1783C6;
+		border-radius: 8px;
+		padding: .2em 0;
+		font-size: 2em;
+		vertical-align: top;
+		width: 15%;
+		cursor: pointer;
+		margin: 0 .5em .5em; }

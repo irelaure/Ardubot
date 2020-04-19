@@ -1,0 +1,91 @@
+
+	/*
+	** MENU DE NIVELES
+	**/
+
+		#subType {
+			margin: .15em auto;
+			text-align: center;
+			width: 100%;
+			font-size: 0; }
+
+			#subType li {
+				width: 33.3%;
+				height: 100%;
+				display: inline-block;
+				vertical-align: top;
+				cursor: pointer;
+				font-size: 16px;
+				padding: .5em 0 1em;
+				transition: all .25s ease; }
+
+				#subType li:hover, #subType li.selected { 
+					opacity: 1;
+					padding: 1em 0 1.5em; }
+
+				#subType li:first-child { background: rgba(236,183,30, 0.6); }
+				#subType li:nth-child(2) { background: rgba(23,131,198,0.6); }
+				#subType li:last-child { background: rgba(205,62,39,0.6); }
+
+				#subType li:first-child:hover, #subType li:first-child.selected { background: rgba(236,183,30,1); }
+				#subType li:nth-child(2):hover, #subType li:nth-child(2).selected  { background: rgba(23,131,198,1); }
+				#subType li:last-child:hover, #subType li:last-child.selected { background: rgba(205,62,39,1); }
+
+				#subType img {
+					height: 10em;
+					margin: 1.5% .5em 0; }
+
+				#subType li h2 {
+					margin: .5em 0 0;
+					opacity: 0.5;
+					color: white;
+					font-weight: bold;
+				}
+
+					#subType li:hover h2 { opacity: 1; }
+					#subType li.selected h2 { opacity: 1; }
+
+		#subType_geo {
+			margin-top: 3em;
+			width: 100%; }
+
+			#subType_geo li {
+				display: inline-block;
+				width: 30%;
+				transition: all .25s ease; }
+
+				#subType_geo li:hover h2 { color: #1783C6; }
+
+				#subType_geo li img { width: 80%; }
+						
+					#subType_geo li:hover img { opacity: 0.8; }
+
+	/*
+	 * LISTA DE TABLEROS
+	 */ 
+	 
+		article ul:last-child {
+			text-align: center;
+			width: 80%;
+			margin: 2em auto;
+			transition: all .5s linear; }
+
+			.level {
+				margin: .5em;
+				padding: 1em;
+				display: inline-block;
+				background-color: white;
+				border-radius: .5em;
+	         transition: all .25s linear; }
+
+	         .done { background: rgba(0,0,0, 0.5); }
+
+				#level_0 .level:hover { background: rgba(236,183,30, 0.6); }
+				#level_1 .level:hover { background: rgba(23,131,198,0.6); }
+				#level_2 .level:hover { background: rgba(205,62,39,0.6); }
+
+				.level img { 
+					height: 15em;
+					margin-top: 0.5em;
+					width: 95%; }
+	

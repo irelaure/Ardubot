@@ -1,0 +1,234 @@
+/* GENERAL */
+	 /* color:
+			- rojo : 	CD3E27
+			- azul : 	1783C6
+			- amarillo: ECB71E
+			- rojo fondo: FF9999;
+			- gris: 596267;
+	 */
+
+	html { height: 100%; }
+	
+	* { 
+		margin: 0;
+		padding: 0; }
+
+	body {
+		min-width:680px;
+		background-color: #D4E6F2;
+		margin: 0;
+		padding: 0;
+		font-family: 'Raleway', sans-serif; 
+		height: 100%;
+		position:relative; }
+
+	a {
+		color: #596267;
+		text-decoration: none; }
+
+	ul { 
+		list-style: none;
+		margin: 0; }
+
+/* STRUCTURE */
+
+	/***********
+	**  HEADER  
+	************/
+
+	header {
+		min-width:680px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #FFFFFF;
+		height: 4.5em;
+		z-index: 5;
+		box-shadow: 0px -8px 24px 0px rgba(0,0,0,0.75); 
+		text-align: center;
+	}
+
+		#location {
+			height: 120%;
+			margin: 0 auto;
+			/* width: 10%; */
+			padding: 0 1em;
+			background: #1783C6;
+			position: absolute;
+			left: 45%;
+			top: -150%;
+			vertical-align: top;
+			text-align: center;
+			box-shadow: 0px 4px 9px -1px rgba(0,0,0,0.75); 
+			-webkit-animation: location .5s ease 0s 1 normal forwards;
+			-o-animation: location .5s ease 0s 1 normal forwards;
+			animation: location .5s ease 0s 1 normal forwards; }
+
+			@keyframes location {
+			    0% { top: -120%; }
+			    100% { top: 0; } }
+
+			#location h2 { 
+				color: white;
+				margin-top: 1.2em; }
+
+		#logo-header { 
+			margin-left: 3%;
+			float: left;
+			padding-top: 0.5em;
+			height: 4.5em; }
+
+		#logo-header img { height: 100%; }
+
+		header nav {
+			margin-right: 3%;
+			float: right;
+			height: 100%; }
+
+			header nav ul { height: 100%; }
+
+				header nav ul li {
+					height: 100%;
+					float: left;
+					text-transform: uppercase;
+					overflow: hidden;
+					transition: all .20s ease;
+    			}
+
+				header nav ul li:hover { background-color: #1783C6;  }
+
+					nav ul li a {
+						display: block;
+						height: 100%;
+						padding: 2em 1em 0;
+						font-size: 15px; }
+
+						header nav ul li:hover a { color: white; }
+			
+					header nav ul li a.signOut {
+						display: inline-block;
+						vertical-align: middle;
+						padding: 7px 14px;
+						height: 100%;
+						font-size: 15px;
+						font-weight: 400;
+						color: white;
+						background-color: #CD3E27; }
+
+	/************
+	**  ARTICLE
+	*************/
+
+	article {
+		width: 100%;
+		background-color: #D4E6F2;
+		padding-top: 4.5em;
+		min-height:70%;
+		overflow: hidden; }
+
+		/* NO INDEX */
+		#message {
+			width: 100%;
+			height: 7em;
+			background-color: #1783C6;
+			overflow: hidden;
+			margin-bottom: 1em; }
+
+			#message h1 {
+				float: left;
+				color: #596267;
+				background-color: #ECB71E;
+				/* width: 30%; */
+				height: 100%;
+				font-size: 4em;
+				text-align: center;
+				padding: .3em .8em 0; }
+
+			#message h2 {
+				float: left;
+				color: white;
+				margin-top: 1.2em;
+				padding-left: 1em;
+				font-size: 2em;
+				text-align: center; }
+
+	/***********
+	**  FOOTER  
+	************/
+
+	footer {
+		width: 100%;
+    	bottom: 0;
+		height: 5em;
+		background-color: rgba(255,255,255,0.5); }
+	
+		footer p {
+			color: #596267;
+			height: 60%;
+			top: 40%;
+			position: relative;
+			margin-left: 5%; }
+
+/**********
+**  ALERT  
+***********/
+
+	.alertWrapper { 
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		text-align: center; 
+		opacity: 0; 
+		display: none; 
+		z-index: 99; }
+
+		.alertVentana { 
+			width: 20%;
+			height: 150px;
+			background: white;
+			position: relative;
+			margin: 0 auto;
+			padding: 1% 1% 0 1%;
+			border-radius: 10px; }
+
+			.alertVentana i {
+				font-size: 100px !important;
+				width: 30%;
+				float: left;
+				position: relative; }
+
+				.fa-exclamation-triangle { color: #ECB71E; }
+				.fa-check-circle { color: #1B926C; }
+				.fa-thumbs-down { color: #ECB71E; }
+
+			.alertVentana p {
+				width: 70%;
+				margin: 33px auto 0;
+				float: left;
+				font: normal normal 1.3em sans-serif; }
+
+			.alertAceptar {
+				width: 20%;
+				clear: both;
+				background: #09C;
+				bottom: 20px;
+				border-radius: 10px;
+				margin: 0 auto;
+				font: normal normal bold 12px/24px sans-serif;
+				height: 24px;
+				padding: 5px;
+				text-transform: uppercase;
+				cursor: pointer;
+				color: #FFF; }
+
+			.alertAceptar:hover {
+				background: #006385;
+				-webkit-transition: all .25s linear; 
+				   -moz-transition: all .25s linear; 
+				    -ms-transition: all .25s linear; 
+				     -o-transition: all .25s linear; 
+				        transition: all .25s linear; }
+

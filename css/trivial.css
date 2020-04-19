@@ -1,0 +1,113 @@
+article {
+  text-align: center;
+}
+    #map {
+      margin:2em auto;
+      width: 40%;
+      background-color: #fff;
+      border-radius: 1em;
+      padding: 2em;
+      display: inline-block;
+    }
+
+    #info {
+    	display: inline-block;
+    	vertical-align: top;
+    	margin:2em auto;
+    	padding: 2em;
+    }
+
+    #questions {
+    	vertical-align: top;
+    	margin:2em auto;
+    	padding: 2em;
+    	background-color: #1783C6;
+    	font-size: 1.2em;
+    	color: white;
+    }
+
+    #punctuation {
+    	vertical-align: top;
+    	margin:2em auto;
+    	padding: 2em;
+    	background-color: #fff;
+    }
+
+/**********************/
+/*****  SWITCH  *******/
+/**********************/
+
+#switch-front {
+    width: 100%;
+    height: 5vw;
+    background-position: -1em -20em;}
+
+  .onoffswitch {
+      position: relative; 
+      width: 7em;
+      left: 45%;
+      top: 30%;
+      -webkit-user-select:none; 
+      -moz-user-select:none; 
+      -ms-user-select: none;
+  }
+  .onoffswitch-checkbox {
+      display: none;
+  }
+  .onoffswitch-label {
+      display: block; 
+      overflow: hidden; 
+      cursor: pointer;
+      border: 2px solid #999999; 
+      border-radius: 0px;
+  }
+  .onoffswitch-inner {
+      display: block; 
+      width: 200%; 
+      margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+  }
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+      display: block; 
+      float: left; 
+      width: 50%; 
+      height: 21px; 
+      padding: 0; 
+      line-height: 24px;
+      font-size: 14px; 
+      color: white; 
+      font-family: Trebuchet, Arial, sans-serif; 
+      font-weight: bold;
+      box-sizing: border-box;
+  }
+  .onoffswitch-inner:before {
+      content: "Web";
+      padding-right: 1.2em;
+      background-color: #ECB71E; color: #FFFFFF;
+  }
+  .onoffswitch-inner:after {
+      content: "Robot";
+      padding-right: 1.5em;
+      background-color: #EEEEEE; color: #999999;
+      text-align: right;
+  }
+  .onoffswitch-switch {
+      display: block; 
+      width: 25px; 
+      margin: -0.5px;
+      background: #FFFFFF;
+      position: absolute; 
+      top: 0;
+      bottom: 0;
+      right: 85px;
+      border: 2px solid #999999; 
+      border-radius: 0px;
+      transition: all 0.3s ease-in 0s; 
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+      right: 0px;
+  }
+
